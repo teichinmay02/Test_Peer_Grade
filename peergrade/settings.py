@@ -33,6 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ["distributed-peer-review.herokuapp.com","web-production-d7de.up.railway.app"]
 # ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vasanifamily.co.in']
 
 
 # Application definition
@@ -69,7 +70,7 @@ ROOT_URLCONF = 'peergrade.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,6 +82,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'peergrade.wsgi.application'
 
