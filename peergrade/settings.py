@@ -102,16 +102,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': "ppergradeview-system",
-#         'USER': "postgres",
-#         'PASSWORD': '0000',
-#         'HOST': "localhost",
-#         'PORT': "5432"
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': "ppergradeview-system",
+        'USER': "postgres",
+        'PASSWORD': '0000',
+        'HOST': "localhost",
+        'PORT': "5432"
+    }
+}
 
 AUTHENTICATION_BACKENDS = [
 
